@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <string name="previous">\u23EE</string>
+    <string name="play">\u25B6</string>
+    <string name="pause">\uFE0E\u23F8</string>
+    <string name="next">\u23ED</string>
+    <string name="audio">Choose Audio</string>
+    <string name="video">Choose Video</string>
+    <string name="stop_music">Stop Music</string>
+    <string name="now_playing">Music is playing now</string>
+</resources>

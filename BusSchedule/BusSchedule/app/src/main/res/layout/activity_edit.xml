@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadow"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:text="@string/busNumber"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/editNumber"
+        app:layout_constraintBottom_toTopOf="@id/editNumber"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/textNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textType"/>
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:text="@string/busType"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/editNumber"
+        app:layout_constraintStart_toStartOf="@id/editType"
+        app:layout_constraintBottom_toTopOf="@id/editType"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/editType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/textType"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textDestination"/>
+
+    <TextView
+        android:id="@+id/textDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:text="@string/busDestination"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/editType"
+        app:layout_constraintStart_toStartOf="@id/editDestination"
+        app:layout_constraintBottom_toTopOf="@id/editDestination"
+        android:gravity="start"/>
+
+    <EditText
+        android:id="@+id/editDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/textDestination"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textDeparture"/>
+
+    <TextView
+        android:id="@+id/textDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:text="@string/busDeparture"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/editDestination"
+        app:layout_constraintStart_toStartOf="@id/timeDeparture"
+        app:layout_constraintBottom_toTopOf="@id/timeDeparture"
+        android:gravity="start"/>
+
+    <TimePicker
+        android:id="@+id/timeDeparture"
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:minWidth="280dp"
+        android:minHeight="110dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintTop_toBottomOf="@id/textDeparture"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textArrival"/>
+
+    <TextView
+        android:id="@+id/textArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="280dp"
+        android:text="@string/busArrival"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/timeDeparture"
+        app:layout_constraintStart_toStartOf="@id/timeArrival"
+        app:layout_constraintBottom_toTopOf="@id/timeArrival"
+        android:gravity="start"/>
+
+    <TimePicker
+        android:id="@+id/timeArrival"
+        android:layout_width="280dp"
+        android:layout_height="110dp"
+        android:minWidth="280dp"
+        android:minHeight="110dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintTop_toBottomOf="@id/textArrival"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonConfirm"/>
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:onClick="confirm"
+        android:text="@string/confirm"
+        android:backgroundTint="@color/light"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeArrival"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BusSchedule</string>
+    <string name="choose">Choose file</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+    <string name="find">Find</string>
+    <string name="back">Back</string>
+    <string name="busNumber">Bus number:</string>
+    <string name="busType">Bus type:</string>
+    <string name="busDestination">Bus destination:</string>
+    <string name="busDeparture">Bus departure:</string>
+    <string name="busArrival">Bus arrival:</string>
+    <string name="timeException">Bus Departure can not be greater then Arrival</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Муз.Плеер</string>
+    <string name="previous">\u23EE</string>
+    <string name="play">\u25B6</string>
+    <string name="pause">\uFE0E\u23F8</string>
+    <string name="next">\u23ED</string>
+    <string name="audio">Выбор аудио</string>
+    <string name="video">Выбор видео</string>
+    <string name="stop_music">Остановить</string>
+    <string name="now_playing">Воспроизводится музыка</string>
+</resources>

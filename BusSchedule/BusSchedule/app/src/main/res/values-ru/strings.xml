@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Расписание</string>
+    <string name="choose">Выбрать файл</string>
+    <string name="add">Добавить</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="find">Найти</string>
+    <string name="back">Назад</string>
+    <string name="busNumber">Номер автобуса:</string>
+    <string name="busType">Тип автобуса:</string>
+    <string name="busDestination">Пункт назначения:</string>
+    <string name="busDeparture">Отправление:</string>
+    <string name="busArrival">Прибытие:</string>
+    <string name="timeException">Вребя отправления должно быть меньше времени прибытия</string>
+</resources>
